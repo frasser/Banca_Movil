@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDetalles"
+        android:layout_width="0dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="412dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        >
+
+        <ImageView
+            android:id="@+id/imaViewFragment"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ahorro"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="3"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_marginTop="14dp"
+                android:text="text"
+                android:textAlignment="center"
+
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:id="@+id/textViewNombreCuenta" />
+
+            <TextView
+
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewNombreCuenta"
+                android:layout_marginStart="26dp"
+                android:text="@string/txt_num_cuenta"
+                android:textAlignment="center"
+
+
+                 />
+
+
+            <TextView
+
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView6"
+                android:text="@string/txt_saldo"
+                />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_toEndOf="@+id/textView7"
+                android:paddingLeft="10dp"
+                android:text="@string/txt_sgno_peso"
+                />
+
+            <TextView
+                android:id="@+id/textViewSaldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBaseline="@+id/textView9"
+                android:layout_alignBottom="@+id/textView9"
+                android:layout_toEndOf="@+id/textView9"
+                android:text="text"
+
+                android:textStyle="bold|italic"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/textViewCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewNombreCuenta"
+                android:layout_toEndOf="@+id/textView6"
+                android:layout_marginLeft="5dp"
+
+                android:text="TextView" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="400dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="#335580"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutDetalles"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/movimiento"
+
+            android:textColor="@android:color/background_light"
+
+            android:textAlignment="center"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listViewCustomeDetalles"
+        android:layout_width="0dp"
+        android:layout_height="370dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="55dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

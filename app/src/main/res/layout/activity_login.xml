@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+
+    >
+
+    <ImageView
+
+        android:id="@+id/fondo_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|bottom"
+        android:scaleType="centerCrop"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+
+
+        >
+
+
+        <Spinner
+            android:id="@+id/spn_documento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:animateLayoutChanges="false"
+
+
+
+
+
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:spinnerMode="dialog"
+            android:splitMotionEvents="false"
+            >
+
+
+        </Spinner>
+
+
+
+
+            <EditText
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/numero_identi"
+                android:inputType="number"
+                android:id="@+id/edt_numero_doc"
+                android:layout_gravity="center"
+
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+
+
+
+
+                />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+
+                android:layout_gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingLeft="15dp"
+                android:paddingRight="30dp"
+                android:textAlignment="center"
+
+                />
+
+
+
+
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_entrar"
+            android:text="@string/login"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+        />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icn_usu"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="20dp"
+
+        android:src="@mipmap/cirro" />
+
+
+</FrameLayout>

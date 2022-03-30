@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:id="@+id/layout_detalles"
+        >
+
+
+        <TextView
+            android:id="@+id/textViewTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="34dp"
+            android:text="Text" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textViewTipo"
+            android:layout_alignBottom="@+id/textViewTipo"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/textViewTipo"
+            android:text="@string/txt_valor_movi" />
+
+        <TextView
+            android:id="@+id/textViewValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_marginStart="27dp"
+            android:layout_toEndOf="@+id/textView12"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewTipo"
+            android:layout_below="@+id/textViewTipo"
+            android:layout_marginTop="11dp"
+            android:text="" />
+        //destino, va en el text de encima
+
+        <TextView
+            android:id="@+id/textViewDestino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView15"
+            android:layout_alignStart="@+id/textView12"
+            android:text="" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3"
+
+    >
+    <ImageView
+        android:id="@+id/imaViewTrans"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="false"
+
+
+        android:clickable="false"
+        android:cropToPadding="false"
+        android:src="@mipmap/cuenta"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:id="@+id/txt_nombreCueTrans"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewTextRef2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt_nombreCueTrans"
+            android:layout_alignTop="@+id/txt_nombreCueTrans"
+            android:layout_marginTop="21dp"
+            android:layout_weight="1"
+            android:text="@string/txt_nuSer" />
+
+        <TextView
+            android:id="@+id/txt_numCue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewTextRef2"
+            android:layout_toEndOf="@+id/textViewTextRef2"
+            android:layout_marginLeft="5dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewTextRef2"
+            android:layout_below="@+id/textViewTextRef2"
+            android:text="@string/txt_ent_cuentas" />
+
+        <TextView
+            android:id="@+id/textViewnNomEnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewTextRef2"
+            android:layout_toEndOf="@+id/textView3"
+            android:text="TextView"
+            android:paddingLeft="10dp"/>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

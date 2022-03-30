@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="3"
+
+    >
+    <ImageView
+        android:id="@+id/imaViewPagos"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:adjustViewBounds="false"
+
+
+        android:clickable="false"
+        android:cropToPadding="false"
+        android:src="@mipmap/metodo"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:id="@+id/txt_nombreSerPago"
+            android:layout_margin="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textViewTextRef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt_nombreSerPago"
+            android:layout_alignTop="@+id/txt_nombreSerPago"
+            android:layout_marginTop="21dp"
+            android:layout_weight="1"
+            android:text="@string/txt_nuSer" />
+
+        <TextView
+            android:id="@+id/txt_numSer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewTextRef"
+            android:layout_toEndOf="@+id/textViewTextRef"
+            android:layout_marginLeft="5dp"
+            android:text="TextView" />
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

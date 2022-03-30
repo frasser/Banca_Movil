@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Mi Banca Movil</string>
+    <string name="app_one_name">Poductos</string>
+    <string name="app_two_name">Detalles</string>
+    <string name="app_three_name">Pagos</string>
+    <string name="app_four_name">Transferencias</string>
+    <string name="app_five_name">Servicios</string>
+    <string name="app_six_name">Cuentas</string>
+
+    <string name="primer_item_combos">Seleccione</string>
+
+    <string name="txt_menu">Salir</string>
+
+
+
+    <string name="numero_identi">Numero de Identificacion</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Ingresar</string>
+    <string name="Bienvenida">Bienvenido</string>
+    <string name="nombre_usuario">Juan Pablo Sanchez Frasser</string>
+    <string name="conexion">Ultima Conexion:</string>
+    <string name="fecha_conexion">dd/mm/yyyy</string>
+    <string name="lista_pro">Lista de Productos</string>
+    <string name="movimiento">Movimientos</string>
+    <string name="det_ahorro">Cuenta de Ahorros</string>
+    <string name="txt_num_cuenta">Numero :</string>
+    <string name="txt_saldo">Saldo Actual: </string>
+    <string name="txt_sgno_peso">$</string>
+    <string name="txt_pago_a">Pago A:</string>
+
+    <string name="desde_pagos">Desde:</string>
+    <string name="txt_cuentas">Cuentas</string>
+    <string name="txt_servicio">Servicios</string>
+    <string name="txt_nuSer">Numero Ref:</string>
+    <string name="txt_ent_cuentas">Entidad:</string>
+    <string name="txt_numero_pro">Numero:</string>
+    <string name="txt_valor_movi">Valor :</string>
+    <string name="txt_A">Destino :</string>
+
+    
+    <string name="txt_reg_nuevo">REGISTRAR NUEVO</string>
+    <string name="txt_reg_ser">SERVICIO</string>
+    <string name="txt_nombre_servicio">NOMBRE DE SERVICIO</string>
+    <string name="txt_numero_ref">NUMERO DE REFERENCIA</string>
+    <string name="txt_btn_cancelar">Cancelar</string>
+    <string name="txt_btn_registra">Registrar</string>
+    <string name="txt_btn_efectuarM">Efectuar</string>
+    <string name="txt_para">Para :</string>
+
+    <string name="txt_reg_nueva">REGISTRAR NUEVA</string>
+    <string name="txt_reg_cuenta">CUENTA</string>
+    <string name="txt_nombre_cuenta">NOMBRE DE CUENTA</string>
+    <string name="txt_entidad">ENTIDAD</string>
+    <string name="txt_numero_cuenta">NUMERO DE CUENTA</string>
+
+
+    <string name="txt_delete_service">ELIMINAR SERVICIO</string>
+    <string name="txt_serv_registra">SERVICIOS REGISTRADOS</string>
+
+    <string name="txt_delete_cuenta">ELIMINAR CUENTA</string>
+    <string name="txt_cuenta_registra">CUENTAS REGISTRADAS</string>
+    <string name="txt_pago_mini">$ 50000</string>
+    <string name="txt_pago_max">$ 100000</string>
+    <string name="txt_pago_otro">Otro Valor</string>
+
+
+
+
+
+    
+
+    <string-array name="lst_tipo_documento">
+        <item>Tipo de Documento</item>
+        <item>Cedula de Ciudadania</item>
+        <item>Cedula Extranjera</item>
+        <item>Tarjeta de Identidad</item>
+
+    </string-array>
+
+    <string-array name="lst_movimientos" >
+        <item>Todos</item>
+        <item>Retiros</item>
+        <item>Consignaciones</item>
+        <item>Avances</item>
+        <item>Abonos</item>
+
+    </string-array>
+
+    <string-array name="lst_desde">
+        <item>Seleccione </item>
+        <item>Cuenta de Ahorros #....</item>
+        <item>Cuenta Corriente #......</item>
+        <item>Tarjeta Credito Visa #....</item>
+        <item>Tarjeta Debito #.....</item>
+
+
+    </string-array>
+
+
+
+</resources>

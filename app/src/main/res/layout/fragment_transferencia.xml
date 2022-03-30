@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="@string/desde_pagos"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCuentaSele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewCuentaSele"
+                android:layout_marginStart="48dp"
+                android:text="@string/txt_num_cuenta"
+                android:paddingLeft="20dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewNumSelec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCuentaSele"
+                android:layout_marginStart="24dp"
+                android:layout_toEndOf="@+id/textView8"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+            <ImageView
+
+
+                android:id="@+id/imageView"
+                android:layout_width="280dp"
+
+                android:layout_height="4dp"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/textView8"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="13dp"
+                android:background="#335080" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="18dp"
+                android:text="@string/txt_para" />
+
+            <TextView
+                android:id="@+id/textViewPagoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/textView11"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textViewPagoA"
+                android:layout_below="@+id/textViewPagoA"
+                android:layout_marginTop="10dp"
+                android:text="@string/txt_numero_pro" />
+
+            <TextView
+                android:id="@+id/textViewNumeroSeleccTrans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView13"
+                android:layout_alignBottom="@+id/textView13"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/textView13"
+                android:text="TextView" />
+
+
+            <EditText
+                android:id="@+id/editTextMontoTransfer"
+
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignTop="@+id/textView5"
+                android:layout_toEndOf="@+id/textView11"
+                android:background="#ece9e9"
+                android:gravity="center"
+                android:inputType="number"
+
+                />
+
+            <Button
+                android:id="@+id/btn_cancelar_Trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="14dp"
+                android:layout_toEndOf="@+id/textView11"
+                android:inputType="number"
+                android:text="@string/txt_btn_cancelar"
+                android:textAllCaps="false"
+                tools:layout_editor_absoluteX="91dp"
+                tools:layout_editor_absoluteY="502dp" />
+
+            <Button
+                android:id="@+id/btn_efectuar_Trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_cancelar_Trans"
+                android:layout_alignBottom="@+id/btn_cancelar_Trans"
+                android:layout_alignEnd="@+id/editTextMontoTransfer"
+                android:layout_marginEnd="14dp"
+                android:text="@string/txt_btn_registra"
+                android:textAllCaps="false"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView140"
+                android:layout_below="@+id/textView140"
+                android:layout_marginTop="23dp"
+                android:text="@string/txt_sgno_peso"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView140"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_below="@+id/textView13"
+                android:layout_marginTop="10dp"
+                android:text="@string/txt_ent_cuentas" />
+
+            <TextView
+                android:id="@+id/textViewNombreEntidadSelecTrans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView140"
+                android:layout_alignBottom="@+id/textView140"
+                android:layout_alignStart="@+id/textViewNumeroSeleccTrans"
+                android:text="TextView" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

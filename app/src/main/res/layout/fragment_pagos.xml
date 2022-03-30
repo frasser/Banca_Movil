@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/background_light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/desde_pagos"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewCuentaSele"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView4"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewCuentaSele"
+                android:layout_marginStart="48dp"
+                android:paddingLeft="20sp"
+                android:text="@string/txt_num_cuenta"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewNumSelec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView8"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_toEndOf="@+id/textView8"
+                android:paddingLeft="10dp"
+                android:text="TextView"
+                android:textSize="20sp" />
+
+            <ImageView
+
+
+                android:id="@+id/imageView"
+                android:layout_width="280dp"
+
+                android:layout_height="4dp"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/textView8"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="13dp"
+                android:background="#335080" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/imageView"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="14dp"
+                android:text="@string/txt_pago_a" />
+
+            <TextView
+                android:id="@+id/textViewPagoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="5dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textViewPagoA"
+                android:layout_below="@+id/textViewPagoA"
+                android:text="@string/txt_nuSer" />
+
+            <TextView
+                android:id="@+id/textViewNumeroRefSelecc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView13"
+                android:layout_alignBottom="@+id/textView13"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/textView13"
+                android:text="TextView" />
+
+
+            <EditText
+                android:id="@+id/editTextValor"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignBottom="@+id/radioGroupValor"
+                android:layout_toEndOf="@+id/textView11"
+                android:background="#ece9e9"
+                android:gravity="center"
+                android:hint="Otro Valor"
+                android:inputType="number"
+                android:paddingRight="15dp"
+                tools:layout_editor_absoluteX="182dp"
+                tools:layout_editor_absoluteY="393dp"
+                android:layout_marginBottom="5dp"/>
+
+            <Button
+                android:id="@+id/btn_cancelar_pago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/editTextValor"
+                android:layout_marginBottom="14dp"
+                android:inputType="number"
+                android:text="@string/txt_btn_cancelar" />
+
+            <Button
+                android:id="@+id/btn_efectuar_pago"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_cancelar_pago"
+                android:layout_alignBottom="@+id/btn_cancelar_pago"
+                android:layout_alignEnd="@+id/editTextValor"
+                android:text="@string/txt_btn_efectuarM"
+                android:textAllCaps="false" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView11"
+                android:layout_below="@+id/textView13">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView13"
+                    android:layout_below="@+id/textView13"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/txt_pago_mini" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonMax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/radioButtonMini"
+                    android:layout_below="@+id/radioButtonMini"
+                    android:text="@string/txt_pago_max" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOtro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/radioButtonMax"
+                    android:layout_below="@+id/radioButtonMax"
+                    android:text="@string/txt_sgno_peso" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.frasser.banca_movil">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainProductos"
+            android:label=""
+            ></activity>
+
+        <activity android:name=".Pagos"
+            android:label="@string/app_three_name"></activity>
+
+        <activity android:name=".Transferencias"
+            android:label="@string/app_four_name"
+            ></activity>
+
+        <activity android:name=".NewService"
+            android:label="@string/app_five_name"
+            ></activity>
+        <activity android:name=".NewAccount"
+            android:label="@string/app_six_name"
+            ></activity>
+
+        <activity android:name=".EliminarServicios"
+            android:label="@string/app_five_name"
+            ></activity>
+
+        <activity android:name=".EliminarCuenta"
+            android:label="@string/app_six_name"
+            ></activity>
+    </application>
+
+</manifest>

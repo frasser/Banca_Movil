@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linearlaLayout_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/desde_pagos"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spn_desde_transferencia"
+            android:layout_gravity="center"
+            android:spinnerMode="dialog"
+
+
+
+            ></Spinner>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_texto_servicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:background="#335580"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlaLayout_transfer">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="@string/txt_cuentas"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+
+
+            />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listViewCuentas"
+        android:layout_width="match_parent"
+        android:layout_height="352dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toTopOf="@id/layout_texto_servicio"
+
+        ></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/listViewCuentas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="6dp"
+
+        >
+        <ImageButton
+            android:id="@+id/btn_agregar_cuenta"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@mipmap/circulo"
+            android:src="@mipmap/anadir"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="138dp"
+            />
+        <ImageButton
+            android:id="@+id/btn_eliminar_cuenta"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@mipmap/circulo"
+            android:src="@mipmap/basura"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container_fragment_transferencias"></FrameLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
